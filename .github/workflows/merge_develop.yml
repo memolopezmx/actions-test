@@ -1,0 +1,19 @@
+name: merge_develop
+
+on:
+  push:
+    branches:
+      - 'develop'
+
+env:
+  MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
+
+jobs:
+  build:
+    runs-on: [bigsur, Xcode13]
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Build
+      run: fastlane beta
+

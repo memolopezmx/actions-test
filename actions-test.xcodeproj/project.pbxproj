@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CFF10527A04D24B84C83B4F /* Pods_actions_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4730A80C6C267EF5928D73E0 /* Pods_actions_test.framework */; };
 		BB2DC34027C7D5A3001196DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2DC33F27C7D5A3001196DD /* AppDelegate.swift */; };
 		BB2DC34227C7D5A3001196DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2DC34127C7D5A3001196DD /* SceneDelegate.swift */; };
 		BB2DC34427C7D5A3001196DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2DC34327C7D5A3001196DD /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4730A80C6C267EF5928D73E0 /* Pods_actions_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_actions_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		503A5EC660C595C246326027 /* Pods-actions-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-actions-test.release.xcconfig"; path = "Target Support Files/Pods-actions-test/Pods-actions-test.release.xcconfig"; sourceTree = "<group>"; };
+		AEF41A80CC7E8DFC366954C8 /* Pods-actions-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-actions-test.debug.xcconfig"; path = "Target Support Files/Pods-actions-test/Pods-actions-test.debug.xcconfig"; sourceTree = "<group>"; };
 		BB2DC33C27C7D5A3001196DD /* actions-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "actions-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2DC33F27C7D5A3001196DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB2DC34127C7D5A3001196DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CFF10527A04D24B84C83B4F /* Pods_actions_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18E4120F57E1995D76731924 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4730A80C6C267EF5928D73E0 /* Pods_actions_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BB2DC33327C7D5A2001196DD = {
 			isa = PBXGroup;
 			children = (
 				BB2DC33E27C7D5A3001196DD /* actions-test */,
 				BB2DC33D27C7D5A3001196DD /* Products */,
+				BC23A7B5396D76E20FB761CA /* Pods */,
+				18E4120F57E1995D76731924 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = "actions-test";
 			sourceTree = "<group>";
 		};
+		BC23A7B5396D76E20FB761CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEF41A80CC7E8DFC366954C8 /* Pods-actions-test.debug.xcconfig */,
+				503A5EC660C595C246326027 /* Pods-actions-test.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB2DC35027C7D5A5001196DD /* Build configuration list for PBXNativeTarget "actions-test" */;
 			buildPhases = (
+				B271A1AFBB5C3508015DBC34 /* [CP] Check Pods Manifest.lock */,
 				BB2DC33827C7D5A3001196DD /* Sources */,
 				BB2DC33927C7D5A3001196DD /* Frameworks */,
 				BB2DC33A27C7D5A3001196DD /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B271A1AFBB5C3508015DBC34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-actions-test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BB2DC33827C7D5A3001196DD /* Sources */ = {
@@ -284,6 +335,7 @@
 		};
 		BB2DC35127C7D5A5001196DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEF41A80CC7E8DFC366954C8 /* Pods-actions-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,7 +354,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "mx.com.nut.actions-test";
+				PRODUCT_BUNDLE_IDENTIFIER = "mx.com.actions-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -312,6 +364,7 @@
 		};
 		BB2DC35227C7D5A5001196DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 503A5EC660C595C246326027 /* Pods-actions-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -330,7 +383,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "mx.com.nut.actions-test";
+				PRODUCT_BUNDLE_IDENTIFIER = "mx.com.actions-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
