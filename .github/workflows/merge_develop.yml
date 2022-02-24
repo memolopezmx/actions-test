@@ -1,16 +1,13 @@
 name: merge_develop
 
-on:
-  push:
-    branches:
-      - 'develop'
+on: push
 
 env:
   MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
 
 jobs:
   build:
-    runs-on: [bigsur, Xcode13]
+    runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
 
