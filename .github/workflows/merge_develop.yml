@@ -11,6 +11,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Bundle
+      run: bundle install
+
     - name: Build
-      run: fastlane beta
+      run: bundle exec fastlane beta
 
