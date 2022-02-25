@@ -33,7 +33,7 @@ platform :ios do
       key_filepath: "./AuthKey_TX3Y3W5B82.p8"
     )
     match(api_key: api_key, type: "development")
-    #gym(scheme: "actions-test", workspace: "actions-test.xcworkspace")
+    gym(scheme: "actions-test", workspace: "actions-test.xcworkspace")
   end
 end
 
