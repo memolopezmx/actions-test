@@ -30,4 +30,8 @@ platform :ios do
     match(api_key: api_key, type: "development")
     gym(scheme: "actions-test", workspace: "actions-test.xcworkspace", export_method: "development", output_directory: "./ipas", output_name: "test1.ipa")
   end
+
+  lane :beta2 do 
+    
+  end
 end
