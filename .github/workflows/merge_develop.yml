@@ -1,6 +1,6 @@
 name: merge_develop
 
-on: push
+on: [push, workflow_dispatch]
 
 env:
   MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
