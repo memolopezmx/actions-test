@@ -27,7 +27,8 @@ platform :ios do
       issuer_id: "69a6de8e-df7f-47e3-e053-5b8c7c11a4d1",
       key_filepath: "./AuthKey_TX3Y3W5B82.p8"
     )
+    pilot(api_key: api_key)
     match(api_key: api_key, type: "development")
-    #gym(scheme: "actions-test", workspace: "actions-test.xcworkspace")
+    gym(scheme: "actions-test", workspace: "actions-test.xcworkspace")
   end
 end
