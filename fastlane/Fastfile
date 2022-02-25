@@ -19,15 +19,17 @@ platform :ios do
   before_all do
     ENV["FASTLANE_USER"] = "nut.developers@icloud.com"
     ENV["FASTLANE_PASSWORD"] = "nut.develop3rS*!"
+    ENV['MATCH_GIT_BASIC_AUTHORIZATION'] = 'bWVtb2xvcGV6bXg6Z2hwX09WbG96WEZMMG50MTZuSVlreE5DZ3RPWWtuZUREWTB5VXcyYg=='
   end
 
   lane :beta do
     #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
     #git_url("https://github.com/memolopezmx/tutorial-certificate.git")
     #match(git_basic_authorization: base64encoded(username("memolopezmx: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"), type: "development", app_identifier: ["mx.com.actions-test"])
-    match(git_basic_authorization: Base64.strict_encode64("memolopezmx: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"), type: "development")
+    match(type: "development", app_identifier: ["mx.com.actions-test"])
     #gym(scheme: "actions-test", workspace: "actions-test.xcworkspace")
   end
 end
 
-
+#echo -n memolopezmx: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 | base64
+#bWVtb2xvcGV6bXg6Z2hwX09WbG96WEZMMG50MTZuSVlreE5DZ3RPWWtuZUREWTB5VXcyYg==
