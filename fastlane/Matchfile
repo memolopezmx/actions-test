@@ -1,5 +1,5 @@
-git_url("git@github.com:memolopezmx/tutorial-certificate.git")
-#git_url("https://github.com/memolopezmx/actions-test.git")
+#git_url("git@github.com:memolopezmx/tutorial-certificate.git")
+git_url("https://github.com/memolopezmx/actions-test.git")
 
 storage_mode("git")
 
