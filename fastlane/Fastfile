@@ -20,6 +20,7 @@ platform :ios do
     ENV["FASTLANE_USER"] = "nut.developers@icloud.com"
     ENV["FASTLANE_PASSWORD"] = "nut.develop3rS*!"
     ENV['MATCH_GIT_BASIC_AUTHORIZATION'] = 'bWVtb2xvcGV6bXg6Z2hwX09WbG96WEZMMG50MTZuSVlreE5DZ3RPWWtuZUREWTB5VXcyYg=='
+    ENV['ISSUER_ID'] = '69a6de8e-df7f-47e3-e053-5b8c7c11a4d1'
   end
 
   lane :beta do
@@ -28,12 +29,12 @@ platform :ios do
     #match(git_basic_authorization: base64encoded(username("memolopezmx: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"), type: "development", app_identifier: ["mx.com.actions-test"])
     api_key = app_store_connect_api_key(
       key_id: "TX3Y3W5B82",
-      issuer_id: "69a6de8e-df7f-47e3-e053-5b8c7c11a4d1",
+      issuer_id: ENV['ISSUER_ID'],
       key_filepath: "./AuthKey_TX3Y3W5B82.p8",
       duration: 1200, # optional (maximum 1200)
       in_house: false # optional but may be required if using match/sigh
     )
-    match(api_key_path: api_key, type: "development")
+    match(api_key: api_key, type: "development")
     #gym(scheme: "actions-test", workspace: "actions-test.xcworkspace")
   end
 end
