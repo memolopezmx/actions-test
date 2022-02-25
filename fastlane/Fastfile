@@ -26,7 +26,7 @@ platform :ios do
     #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
     #git_url("https://github.com/memolopezmx/tutorial-certificate.git")
     #match(git_basic_authorization: base64encoded(username("memolopezmx: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"), type: "development", app_identifier: ["mx.com.actions-test"])
-    match(type: "development", app_identifier: ["mx.com.actions-test"])
+    match(type: "development")
     #gym(scheme: "actions-test", workspace: "actions-test.xcworkspace")
   end
 end
