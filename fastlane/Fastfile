@@ -23,8 +23,10 @@ platform :ios do
 end
 
 lane :beta do
-  #ghp_RQvsegz9tiOOaXKqJ4BqWQLcdi8SCj1oSav
+  #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
   #git_url("https://github.com/memolopezmx/tutorial-certificate.git")
-  match(git_basic_authorization: Base64.strict_encode64("memolopezmx:ghp_RQvsegz9tiOOaXKqJ4BqWQLcdi8SCj1oSav"), type: "development", app_identifier: ["mx.com.actions-test"])
+  match(git_basic_authorization: Base64.strict_encode64("memolopezmx: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"), type: "development", app_identifier: ["mx.com.actions-test"])
   gym(scheme: "actions-test", workspace: "actions-test.xcworkspace")
 end
+
+
