@@ -2,6 +2,9 @@ name: merge_develop
 
 on: push
 
+env:
+  MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
+  
 jobs:
   build:
     runs-on: macos-latest
