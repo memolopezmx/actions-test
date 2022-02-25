@@ -10,6 +10,9 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
-    
+
+    - name: Bundle
+      run: bundle install
+
     - name: Build
       run: bundle exec fastlane beta
