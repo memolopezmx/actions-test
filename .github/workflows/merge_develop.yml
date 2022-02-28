@@ -15,7 +15,7 @@ jobs:
       run: gem install bundler   
 
     - name: Bundle
-      run: bundle install
+      run: rm .Gemfile.lock && bundle update && bundle install
 
     - name: Build
       run: bundle exec fastlane beta
