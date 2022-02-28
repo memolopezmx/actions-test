@@ -11,9 +11,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Ruby
-      run: rvm use 2.6.6
-
     - name: Install Bundler
       run: gem install bundler
 
