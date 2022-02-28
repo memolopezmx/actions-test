@@ -23,10 +23,18 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 
 
-### ios beta2
+### ios sync_all_development
 
 ```sh
-[bundle exec] fastlane ios beta2
+[bundle exec] fastlane ios sync_all_development
+```
+
+
+
+### ios sync_devices_info
+
+```sh
+[bundle exec] fastlane ios sync_devices_info
 ```
 
 
