@@ -11,7 +11,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Install Bundler
+      run: gem install bundler
 
+    - name: Bundle
+      run: bundle install
 
     - name: Build
       run: bundle exec fastlane beta
