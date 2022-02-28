@@ -5,7 +5,7 @@ storage_mode("git")
 
 type("development") # The default type, can be: appstore, adhoc, enterprise or development
 
-#app_identifier(["mx.com.actions-test"])
+app_identifier(["mx.com.actions-test"])
 username("nut.developers@icloud.com") # Your Apple Developer Portal username
 
 # For all available options run `fastlane match --help`
