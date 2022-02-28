@@ -11,14 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Install Bundler
-      run: gem install bundler
 
-    - name: Install Bundler
-      run: gem install fastlane-yaml-init
-
-    - name: Bundle
-      run: bundle update && bundle install
 
     - name: Build
       run: bundle exec fastlane beta
