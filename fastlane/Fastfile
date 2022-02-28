@@ -28,7 +28,7 @@ platform :ios do
     #  key_filepath: "./AuthKey_TX3Y3W5B82.p8"
     #)
     #match(api_key: api_key, type: "development")
-    #match(type: "development")
+    match(type: "development")
     gym(scheme: "actions-test", workspace: "actions-test.xcworkspace", export_method: "development", output_directory: "./ipas", output_name: "test2.ipa")
   end
 
