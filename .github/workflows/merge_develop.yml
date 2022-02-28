@@ -12,10 +12,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Install Bundler
-      run: gem install bundler
-
-    - name: Install Bundler
-      run: bundle update          
+      run: gem install bundler   
 
     - name: Bundle
       run: bundle install
