@@ -12,9 +12,6 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Install Bundler
-      run: rvm use 3.0.0
-
-    - name: Install Bundler
       run: gem install bundler
 
     - name: Install Bundler
