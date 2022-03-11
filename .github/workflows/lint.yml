@@ -15,15 +15,7 @@ jobs:
         # Disabling shallow clone is recommended for improving relevancy of reporting
         fetch-depth: 0
     - name: SonarCloud Scan
-      #uses: sonarsource/sonarcloud-github-action@master
-      uses: highbyte/sonarscan-dotnet@v2.1.2
-      with:
-        # The key of the SonarQube project
-        sonarProjectKey: memolopezmx_actions-test
-        # The name of the SonarQube project
-        sonarProjectName:  actions-test
-        # The name of the SonarQube organization in SonarCloud. For hosted SonarQube, skip this setting.
-        sonarOrganization: memolopezmx
+      uses: sonarsource/sonarcloud-github-action@master
       env:
         GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
