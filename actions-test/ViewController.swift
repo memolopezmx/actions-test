@@ -28,4 +28,8 @@ class ViewController: UIViewController {
     }
     
     func multiplicacion(a:Int, b:Int) -> Int{return a*b}
+    
+    func sera() {
+        
+    }
 }
