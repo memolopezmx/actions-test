@@ -32,4 +32,8 @@ class ViewController: UIViewController {
     func sera() {
         
     }
+    
+    func sera2() {
+        
+    }
 }
