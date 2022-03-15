@@ -23,5 +23,9 @@ class ViewController: UIViewController {
     func suma(a: Int, b: Int) -> Int {
         return a + b
     }
+    
+    func resta(a: Int, b: Int) -> Int{
+        return a - b
+    }
 }
 
