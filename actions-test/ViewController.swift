@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import UIKit
+import UIKit
 import Foundation
 
 class ViewController: UIViewController {
@@ -21,7 +23,9 @@ class ViewController: UIViewController {
         return a + b
     }
     
-    func nombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosnombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosPorDosnombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosnombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosPorDos(a: Int, b: Int) -> Int {
+    func nombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosnombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosPorDosnombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosnombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosPorDosnombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosnombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosPorDosnombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosnombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosPorDos(a: Int, b: Int) -> Int {
         return a + b
     }
+    
+    func multiplicacion(a:Int, b:Int) -> Int{return a*b}
 }
