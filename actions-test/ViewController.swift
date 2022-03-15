@@ -18,8 +18,15 @@ class ViewController: UIViewController {
     }
 
     func testSumLint(a: Int, b: Int) -> Int {
-        var x = 0
         return a + b
+    }
+    
+    func testSumLinttestSumLinttestSumLinttestSumLinttestSumLinttestSumLinttestSumLint(a: Int, b: Int) -> Int {
+        return a + b
+    }
+    
+    func resta(a: Int, b: Int) -> Int{
+        return a - b
     }
 }
 
