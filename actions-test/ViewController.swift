@@ -6,8 +6,6 @@
 //
 
 import UIKit
-import UIKit
-import UIKit
 import Foundation
 
 class ViewController: UIViewController {
@@ -22,28 +20,4 @@ class ViewController: UIViewController {
     func suma(a: Int, b: Int) -> Int {
         return a + b
     }
-    
-    func nombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosnombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosPorDosnombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosnombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosPorDosnombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosnombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosPorDosnombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosnombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosPorDos(a: Int, b: Int) -> Int {
-        return a + b
-    }
-    
-    func multiplicacion(a:Int, b:Int) -> Int{return a*b}
-    
-    func sera() {
-        
-    }
-    
-    func sera2() {
-        
-    }
-    
-    func sera3() {
-        
-    }
-    
-    func sera4() {
-        
-    }
-    
-    
 }
