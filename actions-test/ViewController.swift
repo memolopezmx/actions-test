@@ -7,7 +7,6 @@
 
 import UIKit
 import Foundation
-import Foundation
 
 class ViewController: UIViewController {
 
@@ -18,12 +17,13 @@ class ViewController: UIViewController {
         print("develop")
     }
 
-    func testSumLint(a: Int, b: Int) -> Int {
+    func suma(a: Int, b: Int) -> Int {
         return a + b
     }
     
-    func resta(a: Int, b: Int) -> Int{
-        return a - b
+    func sumator(a: Int, b: Int) -> Int {
+        var c = 0
+        return a + b
     }
 }
 
