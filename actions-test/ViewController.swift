@@ -17,9 +17,7 @@ class ViewController: UIViewController {
         print("develop")
     }
 
-    func testSumLint(a: Int, b: Int) -> Int {
-        var x = 0
+    func suma(a: Int, b: Int) -> Int {
         return a + b
     }
 }
-
