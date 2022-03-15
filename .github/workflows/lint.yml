@@ -3,7 +3,11 @@ name: Linterna
 on:
   push:
     branches:
-      - "*"
+    - develop
+    - main
+    - features/*
+  pull_request:
+      types: [opened, synchronize, reopened]
 
 jobs:
   main:
