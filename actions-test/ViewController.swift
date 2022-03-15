@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         return a + b
     }
     
-    func nombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosnombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosPorDos(a: Int, b: Int) -> Int {
+    func nombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosnombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosPorDosnombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosnombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosPorDos(a: Int, b: Int) -> Int {
         return a + b
     }
 }
