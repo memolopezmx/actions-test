@@ -16,7 +16,11 @@ class ViewController: UIViewController {
         print("hola")
     }
 
-    func testSumLint(a: Int, b: Int) -> Int {
+    func testSumLinttestSumLinttestSumLinttestSumLinttestSumLint(a: Int, b: Int) -> Int {
+        return a + b
+    }
+    
+    func suma(a: Int, b: Int) -> Int {
         return a + b
     }
 }
