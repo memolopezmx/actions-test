@@ -1,4 +1,4 @@
-name: Linterna
+name: Build
 
 on:
   push:

@@ -21,14 +21,7 @@ class ViewController: UIViewController {
         return a + b
     }
     
-    func sumator(a: Int, b: Int) -> Int {
+    func nombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosnombreLargoParaProbarLaLinterdaDeLaFuncionSumaQuePermiteSumarDosNumerosEnterosPorDos(a: Int, b: Int) -> Int {
         return a + b
     }
 }
-
-extension UIViewController {
-    func suma(a: Int, b: Int) -> Int {
-        return a + b
-    }
-}
-
