@@ -22,7 +22,12 @@ class ViewController: UIViewController {
     }
     
     func sumator(a: Int, b: Int) -> Int {
-        var c = 0
+        return a + b
+    }
+}
+
+extension UIViewController {
+    func suma(a: Int, b: Int) -> Int {
         return a + b
     }
 }
